@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        console.log("ready");
+      });
+    </script>
+    <style>
+      header {
+        height: 150px;
+        border-top: 5px solid #ff0000;
+        padding: 5px;
+      }
+      .title .logo img {
+        float: left;
+        height: 50px;
+        margin: 20px;
+        padding-right: 50px;
+        border-right: 5px solid #ff0000;
+      }
+      .title p {
+        float: left;
+        width: 220px;
+        padding-top: 20px;
+      }
+
+      .welcome {
+        float: right;
+        margin-top: 15px;
+      }
+      .welcome ul {
+        list-style-type: none;
+        padding-left: 0;
+        padding-top: 20px;
+        display: inline;
+      }
+      .welcome ul li {
+        float: left;
+        padding: 15px;
+      }
+      .welcome ul li:nth-child(3) {
+        padding-left: 15px;
+      }
+      .welcome a {
+        color: #ff0000;
+        text-decoration: none;
+      }
+      .welcome .user {
+        font-size: 10pt;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="title">
+          <div class="logo">
+            <img src="assets/netflix-logo-small.png" />
+          </div>
+          <p>STUDIO APPS ONBOARDING &amp; TRAINING</p>
+        </div>
+        <div class="welcome">
+          <ul>
+            <li><a href="#">APPS</a></li>
+            <li><a href="#">ONBOARD</a></li>
+            <li>Welcome <span class="user">jfifer@baseninestudios.com</span></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
