@@ -20,6 +20,9 @@
       });
     </script>
     <style>
+      .row {
+        margin-right: 0 !important;
+      }
       header {
         border-top: 5px solid #ff0000;
       }
@@ -98,6 +101,44 @@
       .main {
         margin-left: 250px;
       }
+
+      .banner {
+        height: 200px;
+        background: #f4f4f4;
+        width: 95%;
+        padding: 0;
+        margin: 10px;
+      }
+      .banner .img {
+        height: 180px;
+        width: 180px;
+        float: left;
+        background: #ccc;
+        margin: 10px;
+      }
+      .banner p {
+        color: #726f70;
+        padding: 15px;
+      }
+
+      .buttons {
+        padding: 15px;
+      }
+      .buttons .title {
+        color: #000;
+        font-weight: bold;
+        font-size: 12pt;
+      }
+      button {
+        color: #cecdcd;
+        background: none;
+        border: 1px solid #cecdcd;
+        border-radius: 0;
+      }
+
+      .right {
+        margin-left: 215px;
+      }
     </style>
   </head>
   <body>
@@ -144,7 +185,25 @@
         </ul>
       </nav>
       <div class="main">
-        
+        <div class="row">
+          <div class="banner">
+            <div class="img">
+
+            </div>
+            <div class="right">
+              <div class="buttons">
+                <div style="float: right;">
+                  <button>Give Feedback</button>
+                  <button>Schedule Training</button>
+                </div>
+                <span class="title">App Title</span>
+              </div>
+              <div class="copy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
