@@ -97,6 +97,14 @@
         color: #ff0000;
         font-weight: bold;
       }
+      nav ul li a {
+        color: #777;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: #ff0000;
+        text-decoration: none;
+      }
 
       .main {
         margin-left: 250px;
@@ -134,10 +142,34 @@
         background: none;
         border: 1px solid #cecdcd;
         border-radius: 0;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #777;
+        border: 1px solid #777;
       }
 
       .right {
         margin-left: 215px;
+      }
+
+      .panel.links {
+        background: #f4f4f4;
+      }
+      .panel.links ul {
+        list-style-type: none;
+        padding: 20px;
+      }
+      .panel.links ul li.title {
+        font-size: 14pt;
+      }
+      .panel.links ul li {
+        padding-top: 5px;
+      }
+      .panel.links ul li a {
+        text-decoration: none;
+        color: #ff0000;
+        padding-top: 5px;
       }
     </style>
   </head>
@@ -166,22 +198,22 @@
       <nav>
         <ul>
           <li class="title">Lorem ipsum</li>
-          <li>dolor sit amet</li>
-          <li>consectetur</li>
-          <li>adipiscing elit</li>
-          <li>sed do</li>
-          <li>eiusmod</li>
-          <li>tempor</li>
-          <li>incididunt</li>
-          <li>labore</li>
-          <li>dolore magna aliqua</li>
-          <li>Ut enim ad minim veniam</li>
-          <li>quis nostrud</li>
-          <li>exercitation</li>
-          <li>ullamco laboris</li>
-          <li>nisi ut aliquip</li>
-          <li>ex ea commodo</li>
-          <li>consequat</li>
+          <li><a href="#">dolor sit amet</a></li>
+          <li><a href="#">consectetur</a></li>
+          <li><a href="#">adipiscing elit</a></li>
+          <li><a href="#">sed do</a></li>
+          <li><a href="#">eiusmod</a></li>
+          <li><a href="#">tempor</a></li>
+          <li><a href="#">incididunt</a></li>
+          <li><a href="#">labore</a></li>
+          <li><a href="#">dolore magna aliqua</a></li>
+          <li><a href="#">Ut enim ad minim veniam</a></li>
+          <li><a href="#">quis nostrud</a></li>
+          <li><a href="#">exercitation</a></li>
+          <li><a href="#">ullamco laboris</a></li>
+          <li><a href="#">nisi ut aliquip</a></li>
+          <li><a href="#">ex ea commodo</a></li>
+          <li><a href="#">consequat</a></li>
         </ul>
       </nav>
       <div class="main">
@@ -201,6 +233,46 @@
               <div class="copy">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel links">
+              <ul>
+                <li class="title">Articles &amp; FAQ</li>
+                <li><a href="#">Consectetur adipiscing</a></li>
+                <li><a href="#">Eiusmod tempor</a></li>
+                <li><a href="#">Incididunt labore et dolores</a></li>
+                <li><a href="#">Magna aliqua Ut enim ad</a></li>
+                <li><a href="#">Minim veniam quis nostrum</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel links">
+              <ul>
+                <li class="title">Walkthroughs</li>
+                <li><a href="#">Consectetur adipiscing</a></li>
+                <li><a href="#">Eiusmod tempor</a></li>
+                <li><a href="#">Incididunt labore et dolores</a></li>
+                <li><a href="#">Magna aliqua Ut enim ad</a></li>
+                <li><a href="#">Minim veniam quis nostrum</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel links">
+              <ul>
+                <li class="title">Media</li>
+                <li><a href="#">Consectetur adipiscing</a></li>
+                <li><a href="#">Eiusmod tempor</a></li>
+                <li><a href="#">Incididunt labore et dolores</a></li>
+                <li><a href="#">Magna aliqua Ut enim ad</a></li>
+                <li><a href="#">Minim veniam quis nostrum</a></li>
+              </ul>
             </div>
           </div>
         </div>
