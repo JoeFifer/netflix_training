@@ -16,11 +16,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function() {
-        console.log("ready");
-      });
-    </script>
     <style>
       .row {
         margin-left: 0 !important;
@@ -117,7 +112,39 @@
       }
 
       .main {
-        margin: 25px;
+        margin: 0;
+        text-align: center;
+      }
+
+      .panel.app {
+        margin: 5px;
+        background: #f4f4f4;
+        color: #ccc;
+        height: 150px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .panel.app .overlay {
+        position: absolute;
+        top: 0;
+        padding: 5px;
+        color: #fff;
+        height: 150px;
+        width: 85%;
+        text-align: center;
+        background: #777;
+        display: none;
+        box-shadow: 0px 0px 50px 3px #ccc;
+        font-size: 10pt;
+      }
+      .panel.app .overlay span {
+        font-weight: bold;
+      }
+      .panel.app .overlay p {
+        padding-top: 10px;
+      }
+      h3.row {
+        padding-left: 25px;
       }
 
       footer {
@@ -157,6 +184,18 @@
         color: #777;
       }
     </style>
+
+    <script>
+      $(document).ready(function() {
+        $('.panel.app').mouseover(function(e) {
+          e.stopPropagation();
+          $(this).children('.overlay').show();
+        }).mouseout(function(e) {
+          $(this).children('.overlay').hide();
+        });
+      });
+    </script>
+
   </head>
   <body>
     <header>
@@ -192,7 +231,181 @@
     </header>
     <div class="content">
       <div class="main">
+        <h3 class="row">Section Title</h3>
         <div class="row">
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="row">Section Title</h3>
+        <div class="row">
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <h3 class="row">Section Title</h3>
+        <div class="row">
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="panel app">
+              <div class="shown">
+                <h4>Image</h4>
+              </div>
+              <div class="overlay">
+                <span>APP TITLE</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
