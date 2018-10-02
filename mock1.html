@@ -196,6 +196,42 @@
         font-size: 12pt;
         color: #777;
       }
+
+      .featherlight-content {
+        width: 90%;
+      }
+
+      .modal-content {
+        text-align: center;
+      }
+      .featherlight-content table {
+        text-align: left;
+      }
+      .featherlight-content table tr:nth-child(even) {
+        background: #f4f4f4;
+      }
+      .featherlight-content table tr th {
+        font-weight: normal;
+      }
+      .featherlight-content table tr td:first-child {
+        color: #ff0000;
+      }
+      .featherlight-content table tr {
+        line-height: 50px;
+      }
+      .featherlight-content table tr td .teamApp {
+        float: left;
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+        background: #ccc;
+        border-radius: 14px;
+      }
+      .featherlight .featherlight-close-icon {
+        margin: 5px;
+        color: #777;
+        font-size: 24pt;
+      }
     </style>
 
     <script>
@@ -495,10 +531,67 @@
         </div>
       </div>
     </footer>
-    <div id="matModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div id="matModal">
+      <!--<span class="close cursor" onclick="closeModal()">&times;</span>-->
       <div class="modal-content">
-        <h3>Modal</h3>
+        <p>Find your Team Below to Surface Materials and a list of recommended applications to learn about.</p>
+        <table>
+          <tr>
+            <th>Team</th>
+            <th>Resources</th>
+            <th>Apps</th>
+          </tr>
+          <tr>
+            <td>IPSUM</td>
+            <td>ipsum</td>
+            <td>
+              <div class="teamApp"></div>
+              <div class="teamApp"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>IPSUM</td>
+            <td>ipsum</td>
+            <td>
+              <div class="teamApp"></div>
+              <div class="teamApp"></div>
+              <div class="teamApp"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>IPSUM</td>
+            <td>ipsum</td>
+            <td>
+              <div class="teamApp"></div>
+              <div class="teamApp"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>IPSUM</td>
+            <td>ipsum</td>
+            <td>
+              <div class="teamApp"></div>
+              <div class="teamApp"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>IPSUM</td>
+            <td>ipsum</td>
+            <td>
+              <div class="teamApp"></div>
+              <div class="teamApp"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>IPSUM</td>
+            <td>ipsum</td>
+            <td>
+              <div class="teamApp"></div>
+              <div class="teamApp"></div>
+            </td>
+          </tr>
+
+        </table>
       </div>
     </div>
   </body>
