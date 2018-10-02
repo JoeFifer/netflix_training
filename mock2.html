@@ -18,8 +18,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" 
-            type="text/javascript" 
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"
+            type="text/javascript"
             charset="utf-8"></script>
     <style>
     <style>
@@ -28,19 +28,19 @@
         margin-left: 0 !important;
       }
       header {
-        border-top: 5px solid #ff0000;
+        border-top: 5px solid #e50914;
       }
       header .top {
         margin-top: 0px;
         height: 90px;
-        background: linear-gradient(#747474, 10px, #fff);
+        background: linear-gradient(#ccc, 10px, #fff);
       }
       .title .logo img {
         float: left;
         height: 40px;
         margin: 20px;
-        padding-right: 50px;
-        border-right: 5px solid #ff0000;
+        padding-right: 30px;
+        border-right: 2px solid #e50914;
       }
       .title p {
         float: left;
@@ -66,12 +66,17 @@
         padding-left: 15px;
       }
       .welcome a {
-        color: #ff0000;
+        color: #e50914;
         text-decoration: none;
       }
       .welcome .user {
         font-size: 10pt;
         font-weight: bold;
+      }
+
+      .width-control {
+        max-width:1200px;
+        margin:0px auto;
       }
 
       header .bottom {
@@ -99,7 +104,7 @@
         padding: 20px;;
       }
       nav ul li.title {
-        color: #ff0000;
+        color: #e50914;
         font-weight: bold;
       }
       nav ul li a {
@@ -107,12 +112,13 @@
         text-decoration: none;
       }
       nav ul li a:hover {
-        color: #ff0000;
+        color: #e50914;
         text-decoration: none;
       }
 
       .main {
         margin-left: 250px;
+        padding-bottom:50px;
       }
 
       .banner {
@@ -173,7 +179,7 @@
       }
       .panel.links ul li a {
         text-decoration: none;
-        color: #ff0000;
+        color: #e50914;
         padding-top: 5px;
       }
       .panel.links ul li a:hover {
@@ -209,7 +215,7 @@
         font-size: 8pt;
       }
       footer ul li a:hover {
-        color: #ff0000;
+        color: #e50914;
         text-decoration: none;
       }
 
@@ -231,6 +237,7 @@
 
       .modal-content {
         text-align: center;
+        border:0px;
       }
       .featherlight-content table {
         width: 100%;
@@ -243,7 +250,7 @@
         font-weight: normal;
       }
       .featherlight-content table tr td:first-child {
-        color: #ff0000;
+        color: #e50914;
       }
       .featherlight-content table tr {
         line-height: 50px;
@@ -260,194 +267,202 @@
         margin: 5px;
         color: #777;
         font-size: 24pt;
+        top:10px;
+        right:10px;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="top">
-        <div class="title">
-          <div class="logo">
-            <img src="assets/netflix-logo-small.png" />
+        <div class="width-control">
+          <div class="title">
+            <div class="logo">
+              <img src="assets/netflix-logo-small.png" />
+            </div>
+            <p>STUDIO APPS ONBOARDING &amp; TRAINING</p>
           </div>
-          <p>STUDIO APPS ONBOARDING &amp; TRAINING</p>
-        </div>
-        <div class="welcome">
-          <ul>
-            <li><a href="#" data-featherlight="#matModal">APPS</a></li>
-            <li><a href="#">ONBOARD</a></li>
-            <li>Welcome <span class="user">user@netflix.com</span></li>
-          </ul>
+          <div class="welcome">
+            <ul>
+              <li><a href="#">APPS</a></li>
+              <li><a href="#" data-featherlight="#matModal">ONBOARD</a></li>
+              <li>Welcome <span class="user">user@netflix.com</span></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="bottom">
-        <input id="search" placeholder="Search Apps" />
+        <input id="search" placeholder="Search Articles within the Help Center" />
       </div>
     </header>
-    <div class="content">
-      <nav>
-        <ul>
-          <li class="title">Lorem ipsum</li>
-          <li><a href="#">dolor sit amet</a></li>
-          <li><a href="#">consectetur</a></li>
-          <li><a href="#">adipiscing elit</a></li>
-          <li><a href="#">sed do</a></li>
-          <li><a href="#">eiusmod</a></li>
-          <li><a href="#">tempor</a></li>
-          <li><a href="#">incididunt</a></li>
-          <li><a href="#">labore</a></li>
-          <li><a href="#">dolore magna aliqua</a></li>
-          <li><a href="#">Ut enim ad minim veniam</a></li>
-          <li><a href="#">quis nostrud</a></li>
-          <li><a href="#">exercitation</a></li>
-          <li><a href="#">ullamco laboris</a></li>
-          <li><a href="#">nisi ut aliquip</a></li>
-          <li><a href="#">ex ea commodo</a></li>
-          <li><a href="#">consequat</a></li>
-        </ul>
-      </nav>
-      <div class="main">
-        <div class="row">
-          <div class="banner">
-            <div class="img">
+    <div class="width-control">
+      <div class="content">
+        <nav>
+          <ul>
+            <li class="title">Lorem ipsum</li>
+            <li><a href="#">dolor sit amet</a></li>
+            <li><a href="#">consectetur</a></li>
+            <li><a href="#">adipiscing elit</a></li>
+            <li><a href="#">sed do</a></li>
+            <li><a href="#">eiusmod</a></li>
+            <li><a href="#">tempor</a></li>
+            <li><a href="#">incididunt</a></li>
+            <li><a href="#">labore</a></li>
+            <li><a href="#">dolore magna aliqua</a></li>
+            <li><a href="#">Ut enim ad minim veniam</a></li>
+            <li><a href="#">quis nostrud</a></li>
+            <li><a href="#">exercitation</a></li>
+            <li><a href="#">ullamco laboris</a></li>
+            <li><a href="#">nisi ut aliquip</a></li>
+            <li><a href="#">ex ea commodo</a></li>
+            <li><a href="#">consequat</a></li>
+          </ul>
+        </nav>
+        <div class="main">
+          <div class="row">
+            <div class="banner">
+              <div class="img">
 
-            </div>
-            <div class="right">
-              <div class="buttons">
-                <div style="float: right;">
-                  <button>Give Feedback</button>
-                  <button>Schedule Training</button>
+              </div>
+              <div class="right">
+                <div class="buttons">
+                  <div style="float: right;">
+                    <button>Give Feedback</button>
+                    <button>Schedule Training</button>
+                  </div>
+                  <span class="title">App Title</span>
                 </div>
-                <span class="title">App Title</span>
+                <div class="copy">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div class="copy">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel links">
+                <ul>
+                  <li class="title">Articles &amp; FAQ</li>
+                  <li><a href="#">Consectetur adipiscing</a></li>
+                  <li><a href="#">Eiusmod tempor</a></li>
+                  <li><a href="#">Incididunt labore et dolores</a></li>
+                  <li><a href="#">Magna aliqua Ut enim ad</a></li>
+                  <li><a href="#">Minim veniam quis nostrum</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel links">
+                <ul>
+                  <li class="title">Walkthroughs</li>
+                  <li><a href="#">Consectetur adipiscing</a></li>
+                  <li><a href="#">Eiusmod tempor</a></li>
+                  <li><a href="#">Incididunt labore et dolores</a></li>
+                  <li><a href="#">Magna aliqua Ut enim ad</a></li>
+                  <li><a href="#">Minim veniam quis nostrum</a></li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel links">
-              <ul>
-                <li class="title">Articles &amp; FAQ</li>
-                <li><a href="#">Consectetur adipiscing</a></li>
-                <li><a href="#">Eiusmod tempor</a></li>
-                <li><a href="#">Incididunt labore et dolores</a></li>
-                <li><a href="#">Magna aliqua Ut enim ad</a></li>
-                <li><a href="#">Minim veniam quis nostrum</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="panel links">
-              <ul>
-                <li class="title">Walkthroughs</li>
-                <li><a href="#">Consectetur adipiscing</a></li>
-                <li><a href="#">Eiusmod tempor</a></li>
-                <li><a href="#">Incididunt labore et dolores</a></li>
-                <li><a href="#">Magna aliqua Ut enim ad</a></li>
-                <li><a href="#">Minim veniam quis nostrum</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel links">
-              <ul>
-                <li class="title">Media</li>
-                <li><a href="#">Consectetur adipiscing</a></li>
-                <li><a href="#">Eiusmod tempor</a></li>
-                <li><a href="#">Incididunt labore et dolores</a></li>
-                <li><a href="#">Magna aliqua Ut enim ad</a></li>
-                <li><a href="#">Minim veniam quis nostrum</a></li>
-              </ul>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel links">
+                <ul>
+                  <li class="title">Media</li>
+                  <li><a href="#">Consectetur adipiscing</a></li>
+                  <li><a href="#">Eiusmod tempor</a></li>
+                  <li><a href="#">Incididunt labore et dolores</a></li>
+                  <li><a href="#">Magna aliqua Ut enim ad</a></li>
+                  <li><a href="#">Minim veniam quis nostrum</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <ul class="address">
-              <li>
-                <h4>Netflix VFX Partners</h4>
-              </li>
-              <li class="copy">
-                &copy; 2018 Netflix, Inc
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-            <ul class="contact">
-              <span>Footer Column Title</span>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-            <ul class="contact">
-              <span>Column Footer Title</span>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-            <ul class="contact">
-              <span>Column Footer Title</span>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-            <ul class="contact">
-              <span>Column Footer Title</span>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-              <li>
-                <a href="#">Footer Column Link</a>
-              </li>
-            </ul>
+      <div class="width-control">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <ul class="address">
+                <li>
+                  <h4>Netflix VFX Partners</h4>
+                </li>
+                <li class="copy">
+                  &copy; 2018 Netflix, Inc
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+              <ul class="contact">
+                <span>Footer Column Title</span>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+              <ul class="contact">
+                <span>Column Footer Title</span>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+              <ul class="contact">
+                <span>Column Footer Title</span>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+              <ul class="contact">
+                <span>Column Footer Title</span>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+                <li>
+                  <a href="#">Footer Column Link</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
