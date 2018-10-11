@@ -8,6 +8,8 @@
     <link rel="stylesheet"
           href="./assets/style/featherlight.css">
     <link rel="stylesheet"
+                href="./assets/style/style.css">
+    <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -21,256 +23,7 @@
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"
             type="text/javascript"
             charset="utf-8"></script>
-    <style>
-    <style>
-      .row {
-        margin-right: 0 !important;
-        margin-left: 0 !important;
-      }
-      header {
-        border-top: 5px solid #e50914;
-      }
-      header .top {
-        margin-top: 0px;
-        height: 90px;
-        background: linear-gradient(#ccc, 10px, #fff);
-      }
-      .title .logo img {
-        float: left;
-        height: 40px;
-        margin: 20px;
-        padding-right: 30px;
-        border-right: 2px solid #e50914;
-      }
-      .title p {
-        float: left;
-        width: 220px;
-        padding-top: 20px;
-      }
 
-      .welcome {
-        float: right;
-        margin-top: 15px;
-      }
-      .welcome ul {
-        list-style-type: none;
-        padding-left: 0;
-        padding-top: 20px;
-        display: inline;
-      }
-      .welcome ul li {
-        float: left;
-        padding: 15px;
-      }
-      .welcome ul li:nth-child(3) {
-        padding-left: 15px;
-      }
-      .welcome a {
-        color: #e50914;
-        text-decoration: none;
-      }
-      .welcome .user {
-        font-size: 10pt;
-        font-weight: bold;
-      }
-
-      .width-control {
-        max-width:1200px;
-        margin:0px auto;
-      }
-
-      header .bottom {
-        border-bottom: 2px solid #aaa;
-        border-top: 2px solid #aaa;
-        height: 75px;
-        background: #f4f4f4;
-      }
-      header .bottom input {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        background: #f4f4f4;
-        border: none;
-        color: #777;
-      }
-
-      nav {
-        float: left;
-        width: 250px;
-        color: #777;
-      }
-      nav ul {
-        list-style-type: none;
-        padding: 20px;;
-      }
-      nav ul li.title {
-        color: #e50914;
-        font-weight: bold;
-      }
-      nav ul li a {
-        color: #777;
-        text-decoration: none;
-      }
-      nav ul li a:hover {
-        color: #e50914;
-        text-decoration: none;
-      }
-
-      .main {
-        margin-left: 250px;
-        padding-bottom:50px;
-      }
-
-      .banner {
-        height: 200px;
-        background: #f4f4f4;
-        width: 95%;
-        padding: 0;
-        margin: 10px;
-      }
-      .banner .img {
-        height: 180px;
-        width: 180px;
-        float: left;
-        background: #ccc;
-        margin: 10px;
-      }
-      .banner p {
-        color: #726f70;
-        padding: 15px;
-      }
-
-      .buttons {
-        padding: 15px;
-      }
-      .buttons .title {
-        color: #000;
-        font-weight: bold;
-        font-size: 12pt;
-      }
-      button {
-        color: #cecdcd;
-        background: none;
-        border: 1px solid #cecdcd;
-        border-radius: 0;
-        cursor: pointer;
-      }
-      button:hover {
-        color: #777;
-        border: 1px solid #777;
-      }
-
-      .right {
-        margin-left: 215px;
-      }
-
-      .panel.links {
-        background: #f4f4f4;
-      }
-      .panel.links ul {
-        list-style-type: none;
-        padding: 20px;
-      }
-      .panel.links ul li.title {
-        font-size: 14pt;
-      }
-      .panel.links ul li {
-        padding-top: 5px;
-      }
-      .panel.links ul li a {
-        text-decoration: none;
-        color: #e50914;
-        padding-top: 5px;
-      }
-      .panel.links ul li a:hover {
-        text-decoration: none;
-        color: #777;
-      }
-
-      footer {
-        background: #f4f4f4;
-        border-top: 1px solid #aaa;
-      }
-
-      footer span {
-        font-size: 12pt;
-        font-weight: bold;
-        color: #777;
-      }
-
-      footer ul {
-        list-style-type: none;
-        text-align: left;
-        padding: 0;
-        padding-top: 50px;
-      }
-
-      footer ul li h4 {
-        color: #000;
-        font-weight: bold;
-      }
-
-      footer ul li a {
-        color: #000;
-        font-size: 8pt;
-      }
-      footer ul li a:hover {
-        color: #e50914;
-        text-decoration: none;
-      }
-
-      .address .copy {
-        font-size: 12pt;
-        color: #777;
-      }
-
-      .featherlight-content {
-        width: 90%;
-      }
-
-      #matModal {
-        display:none;
-      }
-      .featherlight .featherlight-inner {
-        display: block !important;
-      }
-
-      .modal-content {
-        text-align: center;
-        border:0px;
-      }
-      .featherlight-content table {
-        width: 100%;
-        text-align: left;
-      }
-      .featherlight-content table tr:nth-child(even) {
-        background: #f4f4f4;
-      }
-      .featherlight-content table tr th {
-        font-weight: normal;
-      }
-      .featherlight-content table tr td:first-child {
-        color: #e50914;
-      }
-      .featherlight-content table tr {
-        line-height: 50px;
-      }
-      .featherlight-content table tr td .teamApp {
-        float: left;
-        margin-right: 10px;
-        width: 25px;
-        height: 25px;
-        background: #ccc;
-        border-radius: 14px;
-      }
-      .featherlight .featherlight-close-icon {
-        margin: 5px;
-        color: #777;
-        font-size: 24pt;
-        top:10px;
-        right:10px;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -278,13 +31,13 @@
         <div class="width-control">
           <div class="title">
             <div class="logo">
-              <img src="assets/netflix-logo-small.png" />
+              <a href="mock1.html"><img src="assets/netflix-logo-small.png" /></a>
             </div>
             <p>STUDIO APPS ONBOARDING &amp; TRAINING</p>
           </div>
           <div class="welcome">
             <ul>
-              <li><a href="#">APPS</a></li>
+              <li><a href="mock1.html">APPS</a></li>
               <li><a href="#" data-featherlight="#matModal">ONBOARD</a></li>
               <li>Welcome <span class="user">user@netflix.com</span></li>
             </ul>
@@ -318,11 +71,11 @@
             <li><a href="#">consequat</a></li>
           </ul>
         </nav>
-        <div class="main">
+        <div class="main category-page">
           <div class="row">
             <div class="banner">
               <div class="img">
-
+                <img class="app-image" src="assets/img/Amadeus_Logo.png" alt="Amadeus" />
               </div>
               <div class="right">
                 <div class="buttons">
@@ -330,10 +83,10 @@
                     <button>Give Feedback</button>
                     <button>Schedule Training</button>
                   </div>
-                  <span class="title">App Title</span>
+                  <span class="title">Amadeus</span>
                 </div>
                 <div class="copy">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>Amadeus calculates and manages music payments and accruals to collection societies and provides critical payment workflows.</p>
                 </div>
               </div>
             </div>
@@ -388,7 +141,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <ul class="address">
                 <li>
-                  <h4>Netflix VFX Partners</h4>
+                  <h4>Netflix Studio Apps</h4>
                 </li>
                 <li class="copy">
                   &copy; 2018 Netflix, Inc
