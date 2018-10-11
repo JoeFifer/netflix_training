@@ -8,6 +8,8 @@
     <link rel="stylesheet"
           href="./assets/style/featherlight.css">
     <link rel="stylesheet"
+                href="./assets/style/style.css">
+    <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -21,244 +23,37 @@
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"
             type="text/javascript"
             charset="utf-8"></script>
-    <style>
-      .row {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-      }
-      .main .row {
-        margin-top: 25px;
-      }
-
-      header {
-        border-top: 5px solid #e50914;
-      }
-      header .top {
-        margin-top: 0px;
-        height: 90px;
-        background: linear-gradient(#ccc, 10px, #fff);
-      }
-      .title .logo img {
-        float: left;
-        height: 40px;
-        margin: 20px;
-        padding-right: 50px;
-        border-right: 5px solid #e50914;
-      }
-      .title p {
-        float: left;
-        width: 220px;
-        padding-top: 20px;
-      }
-
-      .welcome {
-        float: right;
-        margin-top: 15px;
-      }
-      .welcome ul {
-        list-style-type: none;
-        padding-left: 0;
-        padding-top: 20px;
-        display: inline;
-      }
-      .welcome ul li {
-        float: left;
-        padding: 15px;
-      }
-      .welcome ul li:nth-child(3) {
-        padding-left: 15px;
-      }
-      .welcome a {
-        color: #e50914;
-        text-decoration: none;
-      }
-      .welcome .user {
-        font-size: 10pt;
-        font-weight: bold;
-      }
-
-      .width-control {
-        max-width:1200px;
-        margin:0px auto;
-      }
-
-      header .bottom {
-        border-bottom: 2px solid #aaa;
-        border-top: 2px solid #aaa;
-        height: 75px;
-        background: #f4f4f4;
-      }
-      header .bottom input {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        background: #f4f4f4;
-        border: none;
-      }
-      header .bottom {
-        width: 100%;
-        background: #f4f4f4;
-        color: #777;
-        border-top: 2px solid #ccc;
-        border-bottom: 2px solid #ccc;
-        height: 50px;
-        text-align: center;
-      }
-      header .bottom input {
-        background: none;
-        border: none;
-        color: #777;
-        width: 50%;
-        height: 50px;
-        padding: 10px;
-        text-align: center;
-      }
-      header .bottom .dispBtns {
-        float: right;
-        padding-right: 25px;
-        padding-top: 10px;
-        color: #777;
-      }
-      header .bottom .dispBtns a {
-        color: #777;
-        text-decoration: none;
-      }
-      header .bottom .dispBtns a span {
-        padding-left: 10px;
-      }
-
-      .main {
-        margin: 0;
-        text-align: center;
-        padding-bottom:50px;
-      }
-
-      .panel.app {
-        margin: 5px;
-        background: #f4f4f4;
-        color: #ccc;
-        height: 175px;
-        text-align: center;
-        vertical-align: middle;
-        cursor: pointer;
-      }
-      .panel.app .overlay {
-        position: absolute;
-        margin: 5px;
-        top: 0;
-        padding: 5px;
-        color: #fff;
-        height: 175px;
-        width: 85%;
-        text-align: center;
-        background: #777;
-        display: none;
-        box-shadow: 0px 0px 50px 3px #ccc;
-        font-size: 10pt;
-      }
-      .panel.app .overlay span {
-        font-weight: bold;
-      }
-      .panel.app .overlay p {
-        padding-top: 10px;
-      }
-      h3.row {
-        padding-left: 25px;
-      }
-
-      footer {
-        background: #f4f4f4;
-        border-top: 1px solid #aaa;
-      }
-
-      footer span {
-        font-size: 12pt;
-        font-weight: bold;
-        color: #777;
-      }
-
-      footer ul {
-        list-style-type: none;
-        text-align: left;
-        padding: 0;
-        padding-top: 50px;
-      }
-
-      footer ul li h4 {
-        color: #000;
-        font-weight: bold;
-      }
-
-      footer ul li a {
-        color: #000;
-        font-size: 8pt;
-      }
-      footer ul li a:hover {
-        color: #e50914;
-        text-decoration: none;
-      }
-
-      .address .copy {
-        font-size: 12pt;
-        color: #777;
-      }
-
-      .featherlight-content {
-        width: 90%;
-      }
-
-      #matModal {
-        display:none;
-      }
-      .featherlight .featherlight-inner {
-        display: block !important;
-      }
-
-      .modal-content {
-        text-align: center;
-        border:0px;
-      }
-      .featherlight-content table {
-        text-align: left;
-        width: 100%;
-      }
-      .featherlight-content table tr:nth-child(even) {
-        background: #f4f4f4;
-      }
-      .featherlight-content table tr th {
-        font-weight: normal;
-      }
-      .featherlight-content table tr td:first-child {
-        color: #e50914;
-      }
-      .featherlight-content table tr {
-        line-height: 50px;
-      }
-      .featherlight-content table tr td .teamApp {
-        float: left;
-        margin-right: 10px;
-        width: 25px;
-        height: 25px;
-        background: #ccc;
-        border-radius: 14px;
-      }
-      .featherlight .featherlight-close-icon {
-        margin: 5px;
-        color: #777;
-        font-size: 24pt;
-        top:10px;
-        right:10px;
-      }
-    </style>
 
     <script>
       $(document).ready(function() {
-        $('.panel.app').mouseover(function(e) {
-          e.stopPropagation();
-          $(this).children('.overlay').show();
-        }).mouseout(function(e) {
-          $(this).children('.overlay').hide();
-        });
+
+        // $('.panel.app').mouseover(function(e) {
+        //   e.stopPropagation();
+        //   $(this).children('.overlay').show();
+        // }).mouseout(function(e) {
+        //   $(this).children('.overlay').hide();
+        // });
+
+        $(document).on('click', '.display-toggle-list', function(e) {
+          e.preventDefault();
+          $('.display-toggle').removeClass('active');
+          $(this).addClass('active');
+          $('.main').css('display','none');
+          $('.main.view-categories').css('display','flex');
+        })
+        $(document).on('click', '.display-toggle-grid', function(e) {
+          e.preventDefault();
+          $('.display-toggle').removeClass('active');
+          $(this).addClass('active');
+          $('.main').css('display','none');
+          $('.main.view-all-apps').css('display','flex');
+        })
+
+        $(document).on('click', '.panel.app', function(e) {
+          e.preventDefault();
+          window.location = 'mock2.html';
+        })
+
       });
     </script>
 
@@ -286,184 +81,397 @@
         <input placeholder="Search Apps" />
         <div class="dispBtns">
           VIEW:
-          <a href="#"><span class="oi oi-list"></span></a>
-          <a href="#"><span class="oi oi-grid-three-up"></span></a>
+          <a class="display-toggle display-toggle-grid active" href="#"><span class="oi oi-grid-three-up"></span></a>
+          <a class="display-toggle display-toggle-list" href="#"><span class="oi oi-list"></span></a>
         </div>
       </div>
     </header>
     <div class="width-control">
       <div class="content">
-        <div class="main">
-          <div class="row">
-            <div class="col-md">
+        <div class="main app-page view-categories">
+
+
+              <h1 class="panel-group-title">Category Title</h1>
+
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Amadeus_Logo.png" alt="Amadeus" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Amadeus</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Athena_Logo.png" alt="Athena" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Athena</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Barb_Logo.png" alt="Barb" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Barb</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Beehive_Logo.png" alt="Beehive" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Beehive</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
+
+              <h1 class="panel-group-title">Category Title</h1>
+
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Amadeus_Logo.png" alt="Amadeus" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Amadeus</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Athena_Logo.png" alt="Athena" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Athena</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Barb_Logo.png" alt="Barb" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Barb</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Beehive_Logo.png" alt="Beehive" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Beehive</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Athena_Logo.png" alt="Athena" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Athena</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Barb_Logo.png" alt="Barb" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Barb</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Beehive_Logo.png" alt="Beehive" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Beehive</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
+              <h1 class="panel-group-title">Category Title</h1>
+
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Amadeus_Logo.png" alt="Amadeus" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Amadeus</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Athena_Logo.png" alt="Athena" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Athena</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Barb_Logo.png" alt="Barb" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Barb</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md">
+
               <div class="panel app">
                 <div class="shown">
-                  <h4>Image</h4>
+                  <img class="app-image" src="assets/img/Beehive_Logo.png" alt="Beehive" />
                 </div>
                 <div class="overlay">
-                  <span>APP TITLE</span>
+                  <span>Beehive</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-            </div>
+
+        </div>
+        <div class="main app-page view-all-apps">
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Amadeus_Logo.png" alt="Amadeus" />
+                </div>
+                <div class="overlay">
+                  <span>Amadeus</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Athena_Logo.png" alt="Athena" />
+                </div>
+                <div class="overlay">
+                  <span>Athena</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Barb_Logo.png" alt="Barb" />
+                </div>
+                <div class="overlay">
+                  <span>Barb</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Beehive_Logo.png" alt="Beehive" />
+                </div>
+                <div class="overlay">
+                  <span>Beehive</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/ContentHub_Logo.png" alt="Content Hub" />
+                </div>
+                <div class="overlay">
+                  <span>Content Hub</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Dash_Logo.png" alt="Dash" />
+                </div>
+                <div class="overlay">
+                  <span>Dash</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Gravity_Logo.png" alt="Gravity" />
+                </div>
+                <div class="overlay">
+                  <span>Gravity</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Interstellar_Logo.png" alt="Interstellar" />
+                </div>
+                <div class="overlay">
+                  <span>Interstellar</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Memento_Logo.png" alt="Memento" />
+                </div>
+                <div class="overlay">
+                  <span>Memento</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Moneyball_Logo.png" alt="Moneyball" />
+                </div>
+                <div class="overlay">
+                  <span>Moneyball</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Murdock_Logo.png" alt="Murdock" />
+                </div>
+                <div class="overlay">
+                  <span>Murdock</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Netflix_Logo.png" alt="Netflix" />
+                </div>
+                <div class="overlay">
+                  <span>Netflix</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/NTV_Logo.png" alt="NTV" />
+                </div>
+                <div class="overlay">
+                  <span>NTV</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/OriginStory_Logo.png" alt="Origin Story" />
+                </div>
+                <div class="overlay">
+                  <span>Origin Story</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Orion_Logo.png" alt="Orion" />
+                </div>
+                <div class="overlay">
+                  <span>Orion</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Prequel_Logo.png" alt="Prequel" />
+                </div>
+                <div class="overlay">
+                  <span>Prequel</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/ProdicleCalendar_Logo.png" alt="Prodicle Calendar" />
+                </div>
+                <div class="overlay">
+                  <span>Prodicle Calendar</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/ProdicleDistribution_Logo.png" alt="Prodicle Distribution" />
+                </div>
+                <div class="overlay">
+                  <span>Prodicle Distribution</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/ProdicleHelpCenter_Logo.png" alt="Prodicle Help Center" />
+                </div>
+                <div class="overlay">
+                  <span>Prodicle Help Center</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/ProdicleMove_Logo.png" alt="Prodicle Move" />
+                </div>
+                <div class="overlay">
+                  <span>Prodicle Move</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Sherlock_Logo.png" alt="Sherlock" />
+                </div>
+                <div class="overlay">
+                  <span>Sherlock</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="panel app">
+                <div class="shown">
+                  <img class="app-image" src="assets/img/Watson_Logo.png" alt="Watson" />
+                </div>
+                <div class="overlay">
+                  <span>Watson</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -475,7 +483,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <ul class="address">
                 <li>
-                  <h4>Netflix VFX Partners</h4>
+                  <h4>Netflix Studio Apps</h4>
                 </li>
                 <li class="copy">
                   &copy; 2018 Netflix, Inc
